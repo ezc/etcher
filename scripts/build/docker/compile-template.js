@@ -36,6 +36,10 @@ _.each([
   {
     architecture: 'x86_64',
     image: 'resin/amd64-debian:jessie'
+  },
+  {
+    architecture: 'armv7hf',
+    image: 'resin/armv7hf-debian:jessie'
   }
 ], (options) => {
   const result = _.template(template)(options);

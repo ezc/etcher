@@ -51,7 +51,7 @@ if [ "$ARGV_TYPE" == "node" ]; then
     RESULT=ia32
   elif [ "$ARGV_ARCHITECTURE" == "x64" ]; then
     RESULT=x64
-  elif [ "$ARGV_ARCHITECTURE" == "armv7l" ]; then
+  elif [ "$ARGV_ARCHITECTURE" == "armv7hf" ]; then
     RESULT=arm
   fi
 elif [ "$ARGV_TYPE" == "debian" ]; then
@@ -59,7 +59,7 @@ elif [ "$ARGV_TYPE" == "debian" ]; then
     RESULT=i386
   elif [ "$ARGV_ARCHITECTURE" == "x64" ]; then
     RESULT=amd64
-  elif [ "$ARGV_ARCHITECTURE" == "armv7l" ]; then
+  elif [ "$ARGV_ARCHITECTURE" == "armv7hf" ]; then
     RESULT=armhf
   fi
 else
